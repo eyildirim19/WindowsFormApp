@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App1", "App1\App1.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App2", "App2\App2.csproj", "{49610563-584D-4CCC-BF8F-2CBAD3C944BB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App3", "App3\App3.csproj", "{BB32B850-3307-4FF4-B04B-E60FC3F5C717}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App4", "App4\App4.csproj", "{991DA5F6-2537-4A4F-B990-25192B367C5D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{49610563-584D-4CCC-BF8F-2CBAD3C944BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49610563-584D-4CCC-BF8F-2CBAD3C944BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49610563-584D-4CCC-BF8F-2CBAD3C944BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB32B850-3307-4FF4-B04B-E60FC3F5C717}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB32B850-3307-4FF4-B04B-E60FC3F5C717}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB32B850-3307-4FF4-B04B-E60FC3F5C717}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB32B850-3307-4FF4-B04B-E60FC3F5C717}.Release|Any CPU.Build.0 = Release|Any CPU
+		{991DA5F6-2537-4A4F-B990-25192B367C5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{991DA5F6-2537-4A4F-B990-25192B367C5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{991DA5F6-2537-4A4F-B990-25192B367C5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{991DA5F6-2537-4A4F-B990-25192B367C5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
