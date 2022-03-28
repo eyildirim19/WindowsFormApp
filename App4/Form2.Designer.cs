@@ -28,86 +28,112 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.txtSayi1 = new System.Windows.Forms.TextBox();
+            this.txtSayi2 = new System.Windows.Forms.TextBox();
+            this.btnArti = new System.Windows.Forms.Button();
+            this.btnEksi = new System.Windows.Forms.Button();
+            this.btnBol = new System.Windows.Forms.Button();
+            this.btnCarp = new System.Windows.Forms.Button();
+            this.lblSonuc = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtSayi1
             // 
-            this.textBox1.Location = new System.Drawing.Point(30, 23);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(190, 23);
-            this.textBox1.TabIndex = 0;
+            this.txtSayi1.Location = new System.Drawing.Point(18, 30);
+            this.txtSayi1.Name = "txtSayi1";
+            this.txtSayi1.Size = new System.Drawing.Size(190, 23);
+            this.txtSayi1.TabIndex = 0;
             // 
-            // textBox2
+            // txtSayi2
             // 
-            this.textBox2.Location = new System.Drawing.Point(30, 61);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(188, 23);
-            this.textBox2.TabIndex = 1;
+            this.txtSayi2.Location = new System.Drawing.Point(18, 78);
+            this.txtSayi2.Name = "txtSayi2";
+            this.txtSayi2.Size = new System.Drawing.Size(188, 23);
+            this.txtSayi2.TabIndex = 1;
             // 
-            // button1
+            // btnArti
             // 
-            this.button1.Location = new System.Drawing.Point(30, 95);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(85, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnArti.Location = new System.Drawing.Point(18, 107);
+            this.btnArti.Name = "btnArti";
+            this.btnArti.Size = new System.Drawing.Size(85, 23);
+            this.btnArti.TabIndex = 2;
+            this.btnArti.Text = "+";
+            this.btnArti.UseVisualStyleBackColor = true;
+            this.btnArti.Click += new System.EventHandler(this.btnArti_Click);
             // 
-            // button2
+            // btnEksi
             // 
-            this.button2.Location = new System.Drawing.Point(143, 98);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(84, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnEksi.Location = new System.Drawing.Point(118, 107);
+            this.btnEksi.Name = "btnEksi";
+            this.btnEksi.Size = new System.Drawing.Size(88, 23);
+            this.btnEksi.TabIndex = 3;
+            this.btnEksi.Text = "-";
+            this.btnEksi.UseVisualStyleBackColor = true;
+            this.btnEksi.Click += new System.EventHandler(this.btnEksi_Click);
             // 
-            // button3
+            // btnBol
             // 
-            this.button3.Location = new System.Drawing.Point(30, 127);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(88, 23);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnBol.Location = new System.Drawing.Point(18, 136);
+            this.btnBol.Name = "btnBol";
+            this.btnBol.Size = new System.Drawing.Size(88, 23);
+            this.btnBol.TabIndex = 4;
+            this.btnBol.Text = "/";
+            this.btnBol.UseVisualStyleBackColor = true;
+            this.btnBol.Click += new System.EventHandler(this.btnBol_Click);
             // 
-            // button4
+            // btnCarp
             // 
-            this.button4.Location = new System.Drawing.Point(137, 127);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(90, 23);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnCarp.Location = new System.Drawing.Point(118, 136);
+            this.btnCarp.Name = "btnCarp";
+            this.btnCarp.Size = new System.Drawing.Size(90, 23);
+            this.btnCarp.TabIndex = 5;
+            this.btnCarp.Text = "*";
+            this.btnCarp.UseVisualStyleBackColor = true;
+            this.btnCarp.Click += new System.EventHandler(this.btnCarp_Click);
             // 
-            // label1
+            // lblSonuc
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(106, 176);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 15);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "label1";
+            this.lblSonuc.AutoSize = true;
+            this.lblSonuc.Location = new System.Drawing.Point(90, 178);
+            this.lblSonuc.Name = "lblSonuc";
+            this.lblSonuc.Size = new System.Drawing.Size(13, 15);
+            this.lblSonuc.TabIndex = 6;
+            this.lblSonuc.Text = "0";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(21, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(40, 15);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "1. Sayı";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(17, 59);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(40, 15);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "2. Sayı";
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(245, 232);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(230, 232);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblSonuc);
+            this.Controls.Add(this.btnCarp);
+            this.Controls.Add(this.btnBol);
+            this.Controls.Add(this.btnEksi);
+            this.Controls.Add(this.btnArti);
+            this.Controls.Add(this.txtSayi2);
+            this.Controls.Add(this.txtSayi1);
             this.Name = "Form2";
             this.Text = "Form2";
             this.ResumeLayout(false);
@@ -117,12 +143,14 @@
 
         #endregion
 
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
-        private Label label1;
+        private TextBox txtSayi1;
+        private TextBox txtSayi2;
+        private Button btnArti;
+        private Button btnEksi;
+        private Button btnBol;
+        private Button btnCarp;
+        private Label lblSonuc;
+        private Label label2;
+        private Label label3;
     }
 }
