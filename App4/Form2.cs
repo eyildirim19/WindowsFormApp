@@ -12,16 +12,26 @@ namespace App4
 {
     public partial class Form2 : Form
     {
-        double sayi1, sayi2, sonuc;
+        double sayi1
+        {
+            get
+            {
+                return Convert.ToDouble(txtSayi1.Text);
+            }
+
+        }
+
+        double sayi2
+        {
+            get
+            {
+                return Convert.ToDouble(txtSayi2.Text);
+            }
+        }
+        double sonuc;
         public Form2()
         {
             InitializeComponent();
-        }
-
-        void SayiHazirla()
-        {
-            sayi1 = Convert.ToDouble(txtSayi1.Text);
-            sayi2 = Convert.ToDouble(txtSayi2.Text);
         }
 
         void Reset()
@@ -32,7 +42,6 @@ namespace App4
 
         private void btnArti_Click(object sender, EventArgs e)
         {
-            SayiHazirla();
             //sonuc = sayi1 + sayi2;
             //lblSonuc.Text = sonuc.ToString();
             lblSonuc.Text = (sayi1 + sayi2).ToString();
@@ -41,21 +50,18 @@ namespace App4
 
         private void btnEksi_Click(object sender, EventArgs e)
         {
-            SayiHazirla();
             lblSonuc.Text = (sayi1 - sayi2).ToString();
             Reset();
         }
 
         private void btnBol_Click(object sender, EventArgs e)
         {
-            SayiHazirla();
             lblSonuc.Text = (sayi1 / sayi2).ToString();
             Reset();
         }
 
         private void btnCarp_Click(object sender, EventArgs e)
         {
-            SayiHazirla();
             lblSonuc.Text = (sayi1 * sayi2).ToString();
             Reset();
         }
